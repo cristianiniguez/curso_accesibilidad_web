@@ -124,11 +124,17 @@ nav {
   color: var(--blanco);
 }
 
-.nav-item:hover {
+.nav-item:hover,
+.nav-item:focus-within {
   background-color: var(--verde);
 }
 
 .nav-item:hover a {
+  color: var(--gris-oscuro);
+}
+
+.nav-item a:focus {
+  outline: none;
   color: var(--gris-oscuro);
 }
 
@@ -154,6 +160,15 @@ nav {
   text-decoration: none;
 }
 
+.social-media li:focus-within {
+  outline: 3px solid var(--verde);
+  padding: 8px;
+}
+
+.social-media li a:focus {
+  outline: none;
+}
+
 .social-link-text {
   padding-right: 8px;
   padding-left: 8px;
@@ -167,7 +182,8 @@ nav {
 
 .window {
   overflow: hidden;
-  width: 805px;
+  width: 835px;
+  padding: 8px;
 }
 
 .project-container {
@@ -183,6 +199,11 @@ nav {
 .project-container button {
   background: none;
   border: none;
+  padding: 0;
+}
+
+.project-container button:focus-within {
+  outline: 3px solid var(--verde);
 }
 
 .project {
@@ -247,8 +268,12 @@ nav {
 }
 
 input {
-  outline: none;
   width: 100%;
+}
+
+input:focus {
+  outline: 3px solid var(--verde);
+  padding: 8px;
 }
 
 .send-button {
