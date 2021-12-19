@@ -71,6 +71,8 @@ section {
   margin: 16px 0 8px;
   padding: 8px;
   text-decoration: none;
+  border: 5px solid var(--gris-oscuro);
+  outline: 3px solid var(--verde);
 }
 
 .header {
@@ -259,19 +261,18 @@ nav {
 }
 
 .form-label {
-  color: var(--blanco);
+  color: var(--verde);
+  font-family: var(--secondary-font);
 }
 
-.message-input input {
-  height: 150px;
+input,
+textarea {
+  width: 100%;
   margin-bottom: 16px;
 }
 
-input {
-  width: 100%;
-}
-
-input:focus {
+input:focus,
+textarea:focus {
   outline: 3px solid var(--verde);
   padding: 8px;
 }
@@ -280,7 +281,7 @@ input:focus {
   align-items: center;
   background-color: var(--verde);
   border-radius: 5px;
-  color: white;
+  color: var(--gris-oscuro);
   font-family: var(--secondary-font);
   display: flex;
   height: 50px;
