@@ -228,6 +228,7 @@ nav {
   height: 75px;
   transition: all 0.2s ease-in-out;
   width: 75px;
+  margin: 8px;
 }
 
 .arrow:hover {
@@ -244,6 +245,10 @@ nav {
   background: center / contain no-repeat url(./images/play-button-right.png);
   background-color: var(--verde);
   border-radius: 50%;
+}
+
+.arrow:focus {
+  outline: 3px solid var(--verde);
 }
 
 .contact-section {
