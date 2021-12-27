@@ -201,6 +201,7 @@ nav {
 .project-container button {
   background: none;
   border: none;
+  margin: 0 8px;
   padding: 0;
 }
 
@@ -213,7 +214,6 @@ nav {
   border: 2px solid #000;
   display: inline-block;
   height: 400px;
-  margin: 0 8px;
   transition: all 0.2s ease-in-out;
   width: 250px;
   object-fit: cover;
